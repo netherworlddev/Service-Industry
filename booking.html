@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book A Call | Service Industry Growth Marketing</title>
+    <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-blue: #1d4ed8; 
+            --brand-red: #e11d48;
+            --brand-orange: #ff8a00;
+            --text-dark: #111827;
+            --max-width: 1200px; /* Limits width on large laptops */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* Responsive Navigation */
+        .nav-wrapper {
+            width: 100%;
+            background: #fff;
+            border-bottom: 1px solid #f3f4f6;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar {
+            width: 100%;
+            max-width: var(--max-width);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-box {
+            background: var(--brand-blue);
+            color: white;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-weight: 800;
+            font-size: 1.2rem;
+        }
+
+        .brand-name {
+            font-weight: 800;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        .brand-name span {
+            color: var(--brand-blue);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--brand-blue);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .phone-link {
+            color: var(--brand-blue);
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 2px solid var(--brand-red);
+            font-size: 0.95rem;
+        }
+
+        .book-btn {
+            background: var(--brand-red);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 0.9rem;
+            transition: transform 0.2s;
+        }
+
+        .book-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Header Content */
+        .content-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .booking-header h1 {
+            font-size: clamp(1.8rem, 5vw, 3rem); /* Dynamically scales font size */
+            font-weight: 800;
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .booking-header h1 span {
+            color: var(--brand-orange);
+        }
+
+        .booking-header p {
+            color: #6b7280;
+            max-width: 650px;
+            margin: 20px auto;
+            font-size: clamp(1rem, 2vw, 1.2rem);
+        }
+
+        /* Mobile & Tablet Adjustments */
+        @media (max-width: 992px) {
+            .nav-links {
+                display: none; /* Hide middle links on smaller tablets/mobile */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            .nav-right {
+                flex-direction: column;
+                gap: 12px;
+                width: 100%;
+            }
+
+            .book-btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .content-container {
+                padding: 40px 15px;
+            }
+
+            .calendly-inline-widget {
+                height: 1000px !important; /* Extra height for mobile calendar flow */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-wrapper">
+        <nav class="navbar">
+            <div class="logo-container">
+                <div class="logo-box">S</div>
+                <div class="brand-name">SERVICE INDUSTRY <span>GROWTH MARKETING</span></div>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="company.html">About Us</a>
+            </div>
+
+            <div class="nav-right">
+                <a href="tel:2146952545" class="phone-link">(214) 695-2545</a>
+                <a href="#" class="book-btn">BOOK A CALL</a>
+            </div>
+        </nav>
+    </div>
+
+    <main class="content-container">
+        <header class="booking-header">
+            <h1>You’re One Step Away From Your <span>Success.</span></h1>
+            <p>Pick a time below for your Growth Consultation. Takes 20 minutes. No contracts, no pressure.</p>
+        </header>
+
+        <div class="calendly-inline-widget" 
+             data-url="https://calendly.com/serviceindustrygrowthmarketing/service-industry-growth-marketing-growth-consultation?hide_landing_page_details=1&hide_gdpr_banner=1&primary_color=1d4ed8" 
+             style="min-width:320px; width:100%; height:750px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </main>
+
+</body>
+</html>
